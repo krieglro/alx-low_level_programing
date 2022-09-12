@@ -5,7 +5,7 @@
  * main combinations of a number 
  */
 
-int main()
+int main(void)
 { 
 	int n = 0;
 	while (n <= 9)
@@ -20,5 +20,5 @@ int main()
 	}
 	putchar('\n');
 
-	retun(0);
+	return(0);
 }

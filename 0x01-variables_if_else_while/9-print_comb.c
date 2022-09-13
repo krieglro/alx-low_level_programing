@@ -8,17 +8,15 @@
 int main(void)
 { 
 	
-	int n = 0;
-	while (n <= 9)
+	int n = 48;
+	while (n <= 1020)
 	{
-		putchar(n + 48);
-		if (n != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(n);
+		if (n == 57)
+			n += 39
 		++n;
 	}
+
 	putchar('\n');
 
 	return(0);

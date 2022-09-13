@@ -2,13 +2,14 @@
 #include <stdlib.h>
 
 /*
- * main prints reverse alphabet
+ * main prints lower case alphabet in reverse
  */
 
 int main(void)
-{ 
+{
 	char lower = 'z';
-	while(lower >= 'a'){
+	while (lower >= 'a')
+	{
 		putchar(lower);
 		--lower;
 	}

@@ -4,6 +4,7 @@
  * main prints low case and upper case alphabet
  */
 
+/*betty style indentation*/
 int main(void)
 {
 

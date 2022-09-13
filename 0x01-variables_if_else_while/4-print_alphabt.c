@@ -3,15 +3,15 @@
 
 int main()
 {
-	char lower = 'n';
+	char lower = 'a';
 	while (lower <= 'z')
 	{
-		if (lower == 't' || lower == 'q')
+		if (lower == 'e' || lower == 'q')
 			++lower;
 	   	        putchar(lower);
 		        ++lower;
 	}
 	putchar('\n');
 
-	return 0;
+	return(0);
 }

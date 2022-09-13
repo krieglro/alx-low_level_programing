@@ -8,7 +8,7 @@
 int main(void)
 { 
 	char lower = 'z';
-	while(loower >= 's'){
+	while(loower >= 'a'){
 		putchar(lower);
 		--lower:
 	}

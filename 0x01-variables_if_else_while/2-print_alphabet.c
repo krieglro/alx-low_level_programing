@@ -8,12 +8,15 @@ int main(void)
 {
 
 	char zh = 'a';
+
 	while (zh <= 'z')
 	{
 		putchar (zh);
+
 		++zh;
+
 	}
 	putchar ('\n');
 
-	return(0);
+	return (0);
 }

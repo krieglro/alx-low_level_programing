@@ -7,9 +7,11 @@ int main()
 	while (lower <= 'z')
 	{
 		if (lower == 'e' || lower == 'q')
+		{
 			++lower;
 	   	        putchar(lower);
 		        ++lower;
+		}
 	}
 	putchar('\n');
 

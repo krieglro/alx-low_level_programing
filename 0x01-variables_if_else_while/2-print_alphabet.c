@@ -2,9 +2,9 @@
 
 /*
  * main prints low case and upper case alphabet
+ * Description: this function prints out the alphabet
  */
 
-/*betty style indentation*/
 int main(void)
 {
 

@@ -3,7 +3,7 @@
  * print_alphabet_10_times - the lowercase laphabets
  */
 
-void print_alphabet_10(void)
+void print_alphabet_x10(void)
 {
 	int a;
 	int n;
@@ -12,8 +12,8 @@ void print_alphabet_10(void)
 	{
 		for (a = 'a'; n <= 'z'; a++)
 		{
-			putchar(a);
+			_putchar(a);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }

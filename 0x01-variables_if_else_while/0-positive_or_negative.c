@@ -9,6 +9,7 @@
 
 int main(void)
 {
+	/*prints random number*/
 	int n;
 
 	srand(time(0));
@@ -19,6 +20,8 @@ int main(void)
 	else if (n == 0) 
 		printf("%i is zero\n", n);
 	else
-		printf("%i is negative\n", n);	
+		printf("%i is negative\n", n);
+
 	return(0);
+
 }

@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main -> assigns randome number to n
- * prints if number is positive or negative
+ * main - assigns randome number to n
+ *
+ * Description: prints if number is positive or negative
  * Retun: Always 0
  */
 

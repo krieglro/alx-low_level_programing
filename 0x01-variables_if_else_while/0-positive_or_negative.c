@@ -6,7 +6,7 @@
  * main - assigns randome number to n
  * @void: shows that main does not return anything
  *
- * Description: assigns a random number to n and checks if value is positive or negative
+ * Description: assigns number to n prints positive or negative
  * Retun: always 0
  */
 

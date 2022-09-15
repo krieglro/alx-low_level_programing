@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /*
- *main prints a random number to check if it is negative or positive
- *The function verifies a number n 
+ *main -> prints a random number to check if it is negative or positive
  */
 
 int main(void)
@@ -14,10 +13,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 	if (n > 0)
 		printf("%i is positive\n", n);
-	else if (n == 0) 
+	else if (n == 0)
 		printf("%i is zero\n", n);
 	else
 		printf("%i is negative\n", n);

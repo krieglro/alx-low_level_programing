@@ -7,7 +7,7 @@
  * @void: shows that main does not return anything
  *
  * Description: assigns number to n prints positive or negative
- * Retun: always 0
+ * Return: always 0
  */
 
 int main(void)

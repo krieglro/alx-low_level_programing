@@ -4,9 +4,10 @@
 
 /**
  * main - assigns randome number to n
+ * @void: shows that main does not return anything
  *
- * Description: prints if number is positive or negative
- * Retun: Always 0
+ * Description: assigns a random number to n and checks if value is positive or negative
+ * Retun: always 0
  */
 
 int main(void)

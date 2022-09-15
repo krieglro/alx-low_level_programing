@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- *main prints base 10 digits and a single line
+/**
+ *main - prints base 10 digits and a single line
+ *
+ * Description: prints a base 10 digit and a single line after
+ * Return: return 0 always
  */
 
-int main()
+int main(void)
 {
 	int n = 0;
 
@@ -16,5 +19,5 @@ int main()
 	}
 	printf("\n");
 
-	return(0);
+	return (0);
 }

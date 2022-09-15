@@ -2,15 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- * main prints a random number
+/**
+ * main - prints a random number
  *
+ * Return:  Always 0
  */
 
 int main(void)
 {
 
 	char zh = 'a';
+
 	while (zh <= 'z')
 	{
 		putchar (zh);

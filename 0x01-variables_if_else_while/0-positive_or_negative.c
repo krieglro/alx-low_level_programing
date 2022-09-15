@@ -2,15 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- *main -> prints a random number to check if it is negative or positive
+/**
+ * main -> assigns randome number to n
+ * prints if number is positive or negative
+ * Retun: Always 0
  */
 
 int main(void)
 {
-	/*prints random number*/
 	int n;
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
@@ -20,6 +20,5 @@ int main(void)
 	else
 		printf("%i is negative\n", n);
 
-	return(0);
-
+	return (0);
 }

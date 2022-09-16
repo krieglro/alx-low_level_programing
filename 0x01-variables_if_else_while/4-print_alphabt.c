@@ -20,6 +20,7 @@ int main(void)
 			++lower;
 		}
 		putchar(lower);
+		++lower;
 	}
 	putchar('\n');
 

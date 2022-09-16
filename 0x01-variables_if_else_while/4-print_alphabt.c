@@ -20,9 +20,11 @@ int main(void)
 			++lower;
 			putchar(lower);
 			++lower;
+		} else
+		{
+			putchar(lower);
 		}
 	}
-	putchar(lower)
 	putchar('\n');
 
 	return (0);

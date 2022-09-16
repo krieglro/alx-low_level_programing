@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * main prints lowcase alpabetical letters and a new line"
+/**
+ * main - prints lowcase alpabetical letters and a new line
+ * @void: shows main doesnt take arguments
+ *
+ * Description: prints lowcase alphabet and a new line
+ * Return: Always 0
  */
-
-int main()
+int main(void)
 {
 	char lower = 'a';
 	char upper = 'A';
@@ -16,13 +19,12 @@ int main()
 		++lower;
 	}
 
-	while (upper <= 'Z')
+	while (upper <= 'z')
 	{
 		putchar(upper);
 		++upper;
 	}
-
 	putchar('\n');
 
-	return(0);
+	return (0);
 }

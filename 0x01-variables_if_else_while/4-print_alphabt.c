@@ -18,12 +18,8 @@ int main(void)
 		if (lower == 'e' || lower == 'q')
 		{
 			++lower;
-			putchar(lower);
-			++lower;
-		} else
-		{
-			putchar(lower);
 		}
+		putchar(lower);
 	}
 	putchar('\n');
 

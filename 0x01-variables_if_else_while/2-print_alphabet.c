@@ -1,26 +1,19 @@
-#include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - prints low case and upper case alphabet
+ * main - signs a random number to n
  * @void: shows main does ont return anything
  *
- * Description: this function prints out the alphabet
+ * Description: this function prints out the last digit of a number
  * Return: Always 0
  */
-
 int main(void)
 {
+	int n;
+	int digit;
 
-	char zh = 'a';
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-	while (zh <= 'z')
-	{
-		putchar (zh);
+	digit = n % 10;
 
-		++zh;
-
-	}
-	putchar ('\n');
-
-	return (0);
-}

@@ -1,4 +1,4 @@
-#include "maing.h"
+#include "main.h"
 
 /**
  * reset_to_98 - updates the reference of a pointer

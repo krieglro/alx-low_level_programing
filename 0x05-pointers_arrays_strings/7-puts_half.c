@@ -4,20 +4,26 @@
 /**
  * puts_half - prints half a string and new line
  * @str: parameter passed to function
+ * Return: no return value
  */
 
-void puts_half(char *str)
+oid puts_half(char *str)
 {
-	int a, y, i;
+	int index, hlf;
 
-	a = strlen(str);
+	index = 0;
+	while (str[index] != '\0')
+		index++;
 
-	if (a % 2 == 1)
-		y = a / 2 + 1;
-	else
-		y = a / 2;
+	hlf = index / 2;
 
-	for (i = y; i < a; i++)
-		_putchar(str[i]);
+	if (index % 2 == 1)
+		half++;
+
+	while (hlf < index)
+	{
+		_putchar(str[half]);
+		hlf++;
+	}
 	_putchar('\n');
 }

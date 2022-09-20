@@ -8,9 +8,11 @@
 
 int _isupper(int c)
 {
-	if ((upper >= 'A') && (upper <= 'Z'))
+	if ((upper >= 65) && (upper <= 90))
 	{
 		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0)
 }

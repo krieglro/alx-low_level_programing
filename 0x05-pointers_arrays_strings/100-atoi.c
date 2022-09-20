@@ -20,8 +20,10 @@ int _atoi(char *s)
 	while (*ctain != '\0' && (*ctain < '0' || *ctain > '9'))
 	{
 		if (*ctain == '-')
+		{
 			a *= -1;
 		ctain++;
+		}
 	}
 	if (*ctain != '\0')
 	{

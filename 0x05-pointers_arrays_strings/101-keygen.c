@@ -10,8 +10,9 @@
 int main(void)
 {
 	int pasw, sum;
+	long now;
 
-	srand(time(NULL));
+	srand(time(&now));
 	sum = 0;
 
 	while (sum <= 2645)

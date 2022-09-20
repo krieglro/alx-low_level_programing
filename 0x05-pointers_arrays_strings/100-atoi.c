@@ -9,28 +9,29 @@
 
 int _atoi(char *s)
 {
-	int a;
+	int sign;
 	unsigned int num;
-	char *ctain;
+	char *temp;
 
-	ctain = s;
+	temp = s;
 	num = 0;
-	a = 1;
+	sign = 1;
 
-	while (*ctain != '\0' && (*ctain < '0' || *ctain > '9'))
+	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
 	{
-		if (*ctain == '-')
+		if (*temp == '-')
 		{
-			a *= -1;
-		ctain++;
+			sign *= -1;
+		temp++;
 		}
 	}
-	if (*ctain != '\0')
+	if (*temp != '\0')
 	{
 		do {
-			num = num * 10 + (*ctain - '0');
-			ctain++;
-		} while (*ctain >= '0' && *ctain <= '9');
+			num = num * 10 + (*temp - '0');
+			temp++;
+
+		} while (*temp >= '0' && *temp <= '9');
 	}
 	return (num * a);
 }

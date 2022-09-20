@@ -11,7 +11,7 @@ int main(void)
 {
 	int pasw, sum;
 
-	srand(time(0.1));
+	srand(time(&seconds));
 	sum = 0;
 
 	while (sum <= 2645)

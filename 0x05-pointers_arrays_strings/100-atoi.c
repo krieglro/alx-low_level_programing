@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int a;
-	undefigned int num;
+	unsigned int num;
 	char *ctain;
 
 	ctain = s;

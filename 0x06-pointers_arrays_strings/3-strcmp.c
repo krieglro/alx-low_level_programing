@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strncmp = compares
+ * _strcmp - compares
  * @s1: the first parameter
  * @s2: the second parameter
  * Return: returns an integer

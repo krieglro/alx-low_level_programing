@@ -6,10 +6,11 @@
  * @dest: this is the first parameter
  * @src: this is the second character
  * @n: this is the third character
- * Return: a string
+ * Return: a character
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, src, n);
 	return (dest);
+}

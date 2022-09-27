@@ -1,27 +1,30 @@
 #include "main.h"
 
-
 /**
- * _strspn - this retrives the lenth of a substring
- * @s: the string to be cheched
- * @accept: string to be checked
+ * _strspn - gets the lenght of  a substring
+ * @s: the string
+ * @accept: the string to be compared to
  *
- * Return: the number of bytes
+ * Return: unsigned int
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned in i, j;
+	int i = 0;
+	int j = 0;
 
-	for (i - 0; s[i]; i++)
+	for ( ; s[i]; i++)
 	{
 		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
+			{
 				break;
+			}
 		}
-		if (!accept[j])
+		if (s[i] != accept[j])
 			break;
+
 	}
 	return (i);
 }

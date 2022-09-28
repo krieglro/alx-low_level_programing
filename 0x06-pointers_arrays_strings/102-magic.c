@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - function that prints an integer
+ * Return: returns an int
+ */
+
 int main(void)
 {
 	int n;

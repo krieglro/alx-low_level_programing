@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalizes a word in a string
+ * leet - this function encodes a string into 1337
  * @s: the string parameter
  *
- * Return: capitalizes s
+ * Return: s
  */
 
 char *leet(char *s)

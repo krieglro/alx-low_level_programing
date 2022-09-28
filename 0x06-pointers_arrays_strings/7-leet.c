@@ -1,31 +1,33 @@
-#include "mian.h"
+#include "main.h"
 
 /**
- * *leet - a function
- * @x: the parameter
- * Return: returns a string
+ * cap_string - function that capitalizes a word in a string
+ * @s: the string parameter
+ *
+ * Return: capitalizes s
  */
 
-char *leet(char *x)
+char *cap_string(char *s)
 {
-	int a = 0;
-	int b = 0;
-	int l = 5;
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-	char tr[5] = {'A', 'E', '0', 'T', 'L'};
-	char trw[5] = {'4', '3', '0', '7', '1'};
-
-	while (x[a])
+	while (*(s + i))
 	{
-		b = 0;
-
-		while (b < l)
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			if (x[a] == tr[b] ||  x[a] - 32 == tr[b])
-				x[a] - trw[b];
-			b++;
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
+			}
 		}
-		a++;
+		i++;
 	}
-	return (x);
+	return (s);
 }

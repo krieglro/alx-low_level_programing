@@ -3,12 +3,12 @@
 /**
  * _puts_recursion - this is a function that prints a string recursively
  * @s: the string parameter
+ *
+ * Return: returns void
  */
 
 void _puts_recursion(char *s)
 {
-	s = "lpa\0";
-
 	if (*s == '\0')
 	{
 		_putchar('\n');

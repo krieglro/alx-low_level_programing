@@ -7,27 +7,19 @@
  * Return: capitalizes s
  */
 
-char *cap_string(char *s)
+char *leet(char *s)
 {
-	int i = 0, j;
-	char a[] = " \t\n,;.!?\"(){}";
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	while (*(s + i))
+	for (i = 0; *(s + i); i++)
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		for (j = 0; j <= 9; j++)
 		{
-			if (i == 0)
-				*(s + i) -= 'a' - 'A';
-			else
-			{
-				for (j = 0; j <= 12; j++)
-				{
-					if (a[j] == *(s + i - 1))
-						*(s + i) -= 'a' - 'A';
-				}
-			}
+			if (a[j] == *(s + i))
+				*(s + i) = b[j];
 		}
-		i++;
 	}
 	return (s);
 }

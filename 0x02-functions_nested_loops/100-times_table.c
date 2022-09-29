@@ -20,8 +20,8 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				r = num * m;
-				
-				if (r <= 9)
+
+				if (r <= 99)
 					_putchar(' ');
 				if (r >= 100)
 				{

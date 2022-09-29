@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * is_palindrome -identifies palindromes
- * @s: the string to be checked
+ * is_palindrome - returns the 1 if s is a palindrome
+ * @s: string to be checked
  *
- * Return: returns 1 if palindrome or 0 if not
+ * Return: 1 if s is a palindrome, 0 otherwise
  */
-
 int is_palindrome(char *s)
 {
 	int flag = 1;
@@ -20,29 +19,28 @@ int is_palindrome(char *s)
  * @s: string to be checked
  * @start: start index
  * @end: end index
- * @flag: flage to indicate
+ * @flag: flag to indicate if a string is a palindrome
  *
- * Return: returns void
+ * Return: void
  */
-
 void check(char *s, int start, int end, int *flag)
 {
-	if (s[start] == s[end])
+	if (start <= end)
 	{
-		*flag *= 1;
-	else
-		*flag *= 0;
-	check(s, start + 1, end - 1, flag);
+		if (s[start] == s[end])
+			*flag *= 1;
+		else
+			*flag *= 0;
+		check(s, start + 1, end - 1, flag);
 	}
 }
 
 /**
- * _strlen_recursion - calculates the length of a string
+ * _strlen_recursion - calculates the length of a sting
  * @s: string to be used
  *
  * Return: length of the string
  */
-
 int _strlen_recursion(char *s)
 {
 	int sum = 0;

@@ -10,7 +10,7 @@ void check(char *s, int start, int end, int *flag);
  *
  * Return: 1 if s is a palindrome, 0 otherwise
  */
-int is _palindrome(char *s)
+int is_palindrome(char *s)
 {
 	int flag = 1;
 

@@ -3,9 +3,9 @@
 /**
  * main - function that prints its name
  * @argc: number of arguments passed to the function
- * @argv: an array of command listed
+ * @argv: argument vector of pointers to strings
  *
- * Return: 0 for success
+ * Return: 0
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {

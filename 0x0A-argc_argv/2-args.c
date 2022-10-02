@@ -4,6 +4,7 @@
  * main - function that prints all arguments it recieves
  * @argc: the number of arguments passed to the function
  * @argv: the argument vector of pointers to strings
+ * Return: returns 0 if succesfull
  */
 int main(int argc, char *argv[])
 {

@@ -2,8 +2,9 @@
 
 /**
  * main - function that prints its name
- * @argc: argc parameter
+ * @argc: number of arguments passed to the function
  * @argv: an array of command listed
+ *
  * Return: 0 for success
  */
 int main(int argc __attribute__((unused)), char *argv[])

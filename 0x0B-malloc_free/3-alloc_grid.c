@@ -4,7 +4,7 @@
  * alloc_grid - returns a pointer to a 2D array of integers
  * @width: the width
  * @height: the height
- * Return: pointer to array
+ * Return: the pointer to the array
  */
 int **alloc_grid(int width, int height)
 {
@@ -13,7 +13,6 @@ int **alloc_grid(int width, int height)
 	int y;
 	int i;
 	int **arr;
-
 	if (width < 1 || height < 1)
 		return (NULL);
 	arr = malloc(sizeof(int *) * height);
@@ -26,7 +25,7 @@ int **alloc_grid(int width, int height)
 		{
 			for (freenum = 0; freenum < i; freenum++)
 			{
-				fre(arr[freenum]);
+				free(arr[freenum]);
 			}
 			free(arr);
 			return (NULL);

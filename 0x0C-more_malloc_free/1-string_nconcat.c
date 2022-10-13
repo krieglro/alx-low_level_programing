@@ -2,18 +2,16 @@
 #include <stdlib>
 
 /**
- * string_nconcat - function concatenates two strings
+ * string_nconcat - concatinates two strings
  * @s1: first string
  * @s2: second string
- * @n: maximum number of bytes of second string to be concatenated
- *
- * Return: retruns pointer to concatinated strin else Null if failed
+ * @n: the maximum number of bytes
+ * Return: null if zero or pointer
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
-	unsigned int len = 0, len2 = 0 index;
+	unsigned int len = n, index;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -21,26 +19,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (s1[len] != '\0')
+	for (index = 0; s1[index]; index++)
 		len++;
 
-	while (s2[len2] != '\0')
-		len2++;
-
-	if (n > len2)
-	n = len2;
-	concat = malloc((len + n + 1) * sizeof(char));
+	concat = malloc(sizeof(char) * (len + 1));
 
 	if (concat == NULL)
-		return (0);
+		return (NULL);
 
-	for (index = 0; index < len; index++)
-		concat[index] = s1[index];
+	len = 0;
 
-	for (; index < (len + n); index++)
-		concat[index] = len2[index - len];
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
 
-	concat[index] = '\0';
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
 
-return (concat);
+	concat[len] = '\0';
+
+	return (concat);
 }

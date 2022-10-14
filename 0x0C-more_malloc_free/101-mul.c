@@ -19,11 +19,11 @@ int find_len(char *str)
 
 	while (*str++)
 		len++;
-	
+
 	return (len);
 }
 /**
- * create_xarry - this function creates an array of chars
+ * create_xarray - this function creates an array of chars
  * @size: size of the array
  * Description: if space is not enough the array exists with status of 98
  * Return: returns a pointer to an array
@@ -96,8 +96,8 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		*prod = 'x';
 		prod++;
 	}
-	
-	prod --;
+
+	prod--;
 
 	while (zeroes--)
 	{
@@ -165,6 +165,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 /**
  * main - multipies two positive numbers
  * @argv: the number of arguments to the arguments.
+ * @argc: an array of pointers to arguments
  *
  * Description: If number of arguments is invalid function exits
  * Return: always returns 0
@@ -198,7 +199,7 @@ int main(int argc, char *argv[])
 	{
 		digit = get_digit(*(argv[2] + index));
 		get_prod(next_prod, argv[1], digit, zeroes++);
-		add_nums(final_prod, next_prod, size -1);
+		add_nums(final_prod, next_prod, size - 1);
 	}
 	for (index = 0; final_prod[index]; index++)
 	{

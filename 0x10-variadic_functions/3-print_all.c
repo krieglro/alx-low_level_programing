@@ -1,4 +1,4 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -19,7 +19,7 @@ void print_char(va_list arg)
 	char c;
 
 	c = va_arg(arg, int);
-	printf("%c", letter);
+	printf("%c", c);
 }
 
 /**
@@ -46,7 +46,7 @@ void print_float(va_list arg)
 	float n;
 
 	n = va_arg(arg, double);
-	printf("%f", num);
+	printf("%f", n);
 }
 
 /**

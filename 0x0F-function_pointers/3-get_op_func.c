@@ -4,7 +4,7 @@
  * get_op_func - A function that selects the correct
  * function to perform an operation asked by the user
  * @s: the operator
- * Return:retruns a pointer to the function
+ * Return:returns a pointer to the function
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -25,5 +25,5 @@ int (*get_op_func(char *s))(int, int)
 		a++;
 	}
 
-	return (ops[i / 2].f);
+	return (ops[a / 2].f);
 }

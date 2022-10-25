@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * bmain - a function that excecuts 
- * before main
+ * bmain - excecuts before main
  * Return: nothing
  */
 

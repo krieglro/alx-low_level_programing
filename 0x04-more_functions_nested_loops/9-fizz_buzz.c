@@ -1,36 +1,32 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main = prints either number or fizz, buzz or fizzBuzz
- *
- * Return: returns 0
+ * main - print	the numbers from 1 to 100
+ * 3 multiplies print fizz instead of the number
+ * 5 prints Buzz instead of number
+ * 3 and 5 prints fizzbuzz
+ * Return: Always 0
  */
-
 int main(void)
 {
-	int n =1;
+	int i;
+	char f[] = "Fizz";
+	char b[] = "Buzz";
+	char fb[] = "FizzBuzz";
 
-	while (n++ < 100)
+	for (i = 1; i <= 100; i++)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
-		{
-			printf("FizzBuzz ");
-		}
-		else if ((n % 3) == 0)
-		{
-			printf("Fizz ");
-		}
-		else if ((n % 5) == 0)
-		{
-			if (n == 100)
-			{
-				printf("Buzz ");
-				printf("\n");
-			}
-			else
-			{
-				printf("Buzz ");
-			}
-		}
+		if (i == 100)
+			printf("%s", b);
+		else if ((i % 3 == 0) && (i % 5 == 0))
+			printf("%s ", fb);
+		else if (i % 3 == 0)
+			printf("%s ", f);
+		else if (i % 5 == 0)
+			printf("%d ", i);
+		else
+			printf("%d ", i);
 	}
+	printf("\n");
+	return (0);
 }

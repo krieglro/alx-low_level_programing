@@ -2,6 +2,8 @@
 #define MAIN_H
 #include <stdio.h>
 
+void print_buffer(char *b, int size);
+int _putchar(char c);
 void reverse_aray(int *a, int n);
 void print_number(int n);
 int _strcmp(char *s1, char *s2);
